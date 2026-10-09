@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Acredo Traveller backend
 
 This project adds a Node.js/Express REST API with persistent SQLite storage to the standalone Acredo Traveller demo. The API stores parcel bookings, trip listings, status events, and reviews; it also enforces pickup and delivery OTP checks and ordered status transitions.
@@ -63,3 +64,6 @@ Trip posts use `from`, `to`, `travelDate`, `departureTime` (`HH:MM`), and `space
 Three example travellers are seeded for the Pune → Mumbai route. In non-production environments, OTPs appear as `debugOtp` in match acceptance and arrival responses so the demo can be exercised without SMS. They are never returned when `NODE_ENV=production`; an SMS provider and authenticated user/role checks must be integrated before enabling real bookings. This API is a local prototype and has no user authentication: do not expose it publicly or enter real personal information.
 
 The API records delivery confirmation and reports `paymentStatus: "ESCROW_PENDING"`. It does not collect money, hold funds, or release payments. A regulated payment/escrow provider must be integrated for real transactions. Photo uploads and identity verification are still demo-only and are not stored by this API.
+=======
+# Acredo
+>>>>>>> 6343005f9bf8c4c6fda0099f050bf5813f876cb1
